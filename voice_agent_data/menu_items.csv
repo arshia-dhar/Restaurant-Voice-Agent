@@ -1,0 +1,33 @@
+item_id,name,category,price_usd,description,allergen_info_verified,available
+1,Burrata & Tomato Salad,starter,12.5,"Creamy burrata, heirloom tomato, basil",1,1
+2,Calamari Fritti,starter,13.0,Crisp fried squid with garlic aioli,1,1
+3,Bruschetta,starter,9.0,"Grilled bread, tomato, garlic, basil",1,1
+4,Caesar Salad,starter,11.0,"Romaine, parmesan, croutons, anchovy dressing",1,1
+5,Tomato Basil Soup,starter,8.5,Slow-cooked tomato soup finished with cream,1,1
+6,Arancini,starter,10.5,Fried risotto balls stuffed with mozzarella,1,1
+7,Chicken Satay Skewers,starter,12.0,"Grilled chicken, peanut sauce, sesame",1,1
+8,Spaghetti al Pesto,main,17.5,House basil pesto with pine nuts and parmesan,1,1
+9,Fettuccine Alfredo,main,18.0,"Butter, cream and parmesan",1,1
+10,Spaghetti Pomodoro,main,15.0,"San Marzano tomato, basil, garlic",1,1
+11,Shrimp Scampi Linguine,main,23.0,"Shrimp, garlic butter, white wine, lemon",1,1
+12,Lasagna Bolognese,main,20.0,"Layered pasta, beef ragu, bechamel",1,1
+13,Chicken Parmigiana,main,21.0,"Breaded chicken, tomato sauce, melted mozzarella",1,1
+14,Grilled Salmon,main,26.0,"Salmon, asparagus, lemon butter",1,1
+15,Margherita Pizza,main,16.0,"Tomato, mozzarella, basil",1,1
+16,Prosciutto & Arugula Pizza,main,19.0,"Prosciutto, arugula, parmesan shavings",1,1
+17,Mushroom Risotto,main,19.5,"Arborio rice, wild mushrooms, parmesan",1,1
+18,Walnut Gorgonzola Gnocchi,main,20.5,"Potato gnocchi, gorgonzola cream, walnuts",1,1
+19,Seasonal Pesto Gnocchi,main,21.0,Rotating special; recipe under review,0,1
+20,Chef's Daily Special,main,24.0,Changes daily,0,1
+21,Steak Frites,main,32.0,"Ribeye, hand-cut fries, garlic butter",1,1
+22,Vegan Buddha Bowl,main,16.5,"Quinoa, chickpeas, avocado, tahini dressing",1,1
+23,Tiramisu,dessert,9.0,"Espresso-soaked ladyfingers, mascarpone",1,1
+24,Panna Cotta,dessert,8.5,Vanilla cream with berry compote,1,1
+25,Almond Cake,dessert,8.5,"Flourless almond cake, whipped cream",1,1
+26,Chocolate Lava Cake,dessert,9.5,"Warm chocolate cake, molten centre",1,1
+27,Pistachio Gelato,dessert,7.0,House-made pistachio gelato,1,1
+28,Lemon Sorbet,dessert,6.5,Dairy-free lemon sorbet,1,1
+29,Sparkling Water,drink,3.5,San Pellegrino 500ml,1,1
+30,Espresso,drink,3.0,Single shot,1,1
+31,House Red Wine (glass),drink,9.0,Chianti,1,1
+32,Fresh Lemonade,drink,4.5,"Lemon, sugar, water",1,1

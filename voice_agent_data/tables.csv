@@ -1,0 +1,14 @@
+table_id,seats,section
+T1,2,indoor
+T2,2,indoor
+T3,2,indoor
+T4,2,indoor
+T5,4,indoor
+T6,4,indoor
+T7,4,indoor
+T8,4,indoor
+T9,4,patio
+T10,4,patio
+T11,6,indoor
+T12,6,patio
+T13,8,private

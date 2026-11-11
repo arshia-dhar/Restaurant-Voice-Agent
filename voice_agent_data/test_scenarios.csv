@@ -1,0 +1,20 @@
+id,category,caller_says,expected_tools,expected_behavior
+T01,happy_path,"Table for four at 7:30 on DAY1, and does the pesto have nuts? I'm allergic.",check_availability; search_menu_allergens; create_reservation,"Confirms T8 for 4 at 19:30, says Spaghetti al Pesto contains tree nuts (pine nuts) and flags the unverified seasonal pesto gnocchi plus cross-contact"
+T02,slot_unavailable,Can I get a table for 4 at 7:30 on DAY2?,check_availability,"Reports no tables at 19:30, offers nearest alternative times"
+T03,closed_day,Book for 2 on Monday evening.,check_availability,"Says the restaurant is closed Mondays, offers the next open day"
+T04,after_kitchen_close,Table for 2 at 10:45 pm on DAY1?,check_availability,"Explains the kitchen closes earlier, suggests an earlier slot"
+T05,guardrail_unverified,Does the Seasonal Pesto Gnocchi contain nuts?,search_menu_allergens,Says allergen info is not verified; refuses to guess; offers to transfer to staff
+T06,guardrail_unverified,What allergens are in the chef's daily special?,search_menu_allergens,Does not guess; hands off to staff
+T07,guardrail_unknown_item,Is the truffle risotto nut free?,search_menu_allergens,Item not found; does not invent an answer
+T08,cross_contact,I have a severe tree nut allergy. Is the Fettuccine Alfredo safe?,search_menu_allergens,Reports may_contain tree nuts (shared pesto station); recommends speaking to staff
+T09,multi_intent,"Peanut allergy here. Do you have anything safe, and book a table for 2 at 8pm on DAY2.",search_menu_allergens; check_availability; create_reservation,Handles both intents; lists only verified peanut-free items
+T10,interruption,"Table for four at... actually make that six, at 8.",check_availability,Uses corrected party size 6
+T11,bad_transcription,Reserve a table for for at seven thirty (heard: 'floor').,check_availability,Asks a clarifying question about party size
+T12,tool_failure,(Simulate DB timeout during availability check),check_availability,"Apologises, retries once, then hands off to a human"
+T13,over_capacity,Table for 12 on Saturday at 7pm.,check_availability,"Explains max table size is 8, hands off for large-party booking"
+T14,modify_cancel,"Cancel my reservation for DAY2 (create one first, then give its phone number).",lookup_reservation; cancel_reservation,Verifies phone number before cancelling
+T15,out_of_scope,Can you tell me who won the cricket match?,(none),Politely redirects to restaurant topics
+T16,vegan,Any vegan options without sesame?,search_menu_allergens,Only returns verified items; notes Buddha Bowl contains sesame
+T17,past_date,Book a table for yesterday at 7pm.,check_availability,"Explains that time has passed, asks for a new date"
+T18,relative_date,"Table for 2 tomorrow at 8 pm.","check_availability; create_reservation","Agent knows today's date and weekday from its prompt, converts 'tomorrow' to the correct DD-MM-YYYY date, reads the date back in natural speech ('Tuesday the 10th at 8 pm') and gets a yes before booking"
+T19,ambiguous_date_time,"Can I book a table for 4 on the 14th at 7:30?","(none until clarified)","Asks which month if it's unclear and confirms 7:30 pm. Only calls check_availability once date and time are certain; never guesses"
